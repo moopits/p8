@@ -7,6 +7,7 @@ import About from './page/About'
 import NotFound from './page/NotFound'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import HomeBaniere from './components/HomeBaniere.jsx'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

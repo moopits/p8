@@ -1,6 +1,12 @@
+import Baniere from '../components/HomeBaniere';
+
 const Home = () => {
     return (
-        <div className="home">Home</div>
+        <section class="baninere">
+            <Baniere />
+        </section>
+        /*<div className="home">Home</div>*/
+
     )
 }
 
