@@ -14,11 +14,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <Router>
         <Header /> {/* Render the Header outside the Routes */}
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
+        <main>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </main>
         <Footer /> {/* Render the Footer outside the Routes */}
     </Router>
 )

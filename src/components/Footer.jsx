@@ -1,12 +1,12 @@
-const Footer= () => {
-    return (
-      <footer className="footer">
-        <div className="logo-container-footer">
-          <img src="logo.png" alt="Company Logo" className="logo" />
-          <p>© 2020 Kasa. All rights reserved</p>
-        </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
+import logo from '../assets/images/logo_footer.png'
+
+const Footer = () => {
+  return (
+    <footer>
+      <img src={logo} alt="Logo footer" />
+      <p>© 2020 Kasa. All rights reserved</p>
+    </footer>
+  );
+};
+
+export default Footer;
