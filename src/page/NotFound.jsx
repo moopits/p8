@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 const NotFound = (
 ) => {
     return (
-        <section className="format-404">
+        <section className="format">
             <p>404</p>
             <p>Oups! La page que vous demandez n'existe pas.</p>
             <Link to="/">
