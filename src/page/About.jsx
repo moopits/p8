@@ -1,6 +1,11 @@
+import Banner from "../components/Banner"
+import img from "../assets/images/capture2.jpg"
+
 const About = () => {
     return (
-        <div className="about">About</div>
+        <section className="about">
+            <Banner img={img} />
+        </section>
     )
 }
 

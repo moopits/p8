@@ -1,11 +1,12 @@
-import Baniere from '../components/HomeBaniere';
+import Banner from "../components/Banner"
+import img from '../assets/images/capture.jpg'
 
 const Home = () => {
     return (
-        <section class="baninere">
-            <Baniere />
+
+        <section className="home">
+            <Banner img={img} text={'Chez vous, partout et ailleurs'} />
         </section>
-        /*<div className="home">Home</div>*/
 
     )
 }
