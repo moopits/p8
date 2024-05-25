@@ -20,6 +20,7 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
+                
             </Routes>
         </main>
         <Footer /> {/* Render the Footer outside the Routes */}
