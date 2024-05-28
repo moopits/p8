@@ -1,5 +1,5 @@
 import Banner from "../components/Banner"
-import Card from "../components/Cards";
+import Cards from "../components/Cards"
 import img from '../assets/images/capture.jpg'
 
 const Home = () => {
@@ -7,7 +7,9 @@ const Home = () => {
 
         <section className="home">
             <Banner img={img} text={'Chez vous, partout et ailleurs'} />
+            <Cards />
         </section>
+
 
     )
 }
