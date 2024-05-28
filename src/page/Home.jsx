@@ -1,4 +1,5 @@
 import Banner from "../components/Banner"
+import Card from "../components/Cards";
 import img from '../assets/images/capture.jpg'
 
 const Home = () => {

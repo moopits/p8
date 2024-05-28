@@ -18,10 +18,10 @@ const NotFound = (
 ) => {
     return (
         <section className="format">
-            <p>404</p>
-            <p>Oups! La page que vous demandez n'existe pas.</p>
+            <span className='not-found-404'>404</span>
+            <span className='not-found-message'>Oups! La page que vous demandez n'existe pas.</span>
             <Link to="/">
-                <p>Retourner sur la page d’accueil</p>
+                <span className='not-found-link'>Retourner sur la page d’accueil</span>
             </Link>
         </section>
     )

@@ -3,13 +3,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 872px;
+    margin: 10px auto;
 
-    /*p {
-        margin: 10px 0; // Ajustez la marge selon vos besoins
-    }*/
+    color: $primary;
+
+        .not-found-404 {
+            font-size: 288px;
+            font-weight: 700;
+            line-height: 410.69px;
+            text-align: center;
+
+        }
+        
+        .not-found-message {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 51.34px;
+            text-align: center;
+        }
+        
+        .not-found-link {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25.67px;
+            text-align: center;
+            color: $black;
+        }
 }
