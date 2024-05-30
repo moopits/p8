@@ -1,8 +1,34 @@
 .home {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgb(255, 255, 255);
     //color: rgb(0, 255, 68);
-    margin-top: 50px;
+    // margin-top: 50px;
+
+    //     width: 100%;
+    //     height: 829px;
+    // border-radius: 25px;
+    // background-color: $bgCard;
+
+
+
+    // margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 30px;
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary;
+        border-radius: 25px;
+        margin-top: 30px;
+        // padding: 30px;
+        width: 100%;
+    }
 
 }
