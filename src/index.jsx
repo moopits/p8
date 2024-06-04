@@ -7,7 +7,7 @@ import About from './page/About'
 import NotFound from './page/NotFound'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
-
+import Lodging from './page/Lodging.jsx'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -19,8 +19,8 @@ root.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/lodging/:id" element={<Lodging />} />
                 <Route path="*" element={<NotFound />} />
-                
             </Routes>
         </main>
         <Footer /> {/* Render the Footer outside the Routes */}

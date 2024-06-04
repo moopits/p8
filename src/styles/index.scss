@@ -6,6 +6,7 @@
 @import './Banner.scss';
 @import './NotFound.scss';
 @import './Cards.scss';
+@import './Collapse.scss';
 
 
 body {
@@ -13,6 +14,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+    margin-left: auto;
+    margin-right: auto;
 
     div#root {
         margin-top: 50px;
