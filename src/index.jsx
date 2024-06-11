@@ -1,4 +1,5 @@
 import React from 'react'
+// importer les outils React
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './styles/index.scss'
@@ -27,3 +28,16 @@ root.render(
     </Router>
 )
 
+
+
+
+
+// --model elementaire appli REACT
+// --importer les outils React
+//import ReactDOM from 'react-dom'
+// --cibler la dic dont l'id est root
+//const divRoot = document.getElementById('root')
+// --créer un noeud racine a partir de la div root
+//const reactRoot = ReactDOM.creatRoot(divRoot)
+// --injecter le 1er composant le noeud racine
+//reactRoot.render(_)
