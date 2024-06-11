@@ -1,51 +1,50 @@
 import { useParams } from "react-router-dom"
 import data from '../assets/json/accommodation.json'
 import Stars from '../components/Stars'
+import Carrousel from "../components/Carrousel"
+import Tags from "../components/Tags"
+import Collapse from "../components/Collapse"
+import NotFound from "./NotFound"
+
 
 const Lodging = () => {
     const { id } = useParams()
-    // const id = useParams().id
 
     const item = data.find(obj => obj.id === id);
 
+    if (!item) {
+        return <NotFound />
+    }
 
     return (
-    <div className="container-lodging"> {id}
-        <div className="lodging-carousel">
-        </div>
+        <section id="lodging">
+            <Carrousel data={item} />
 
-        <div className="container-infos">
-            <div className="container-element-1">
-                <div className="lodging-title">
-                    <h1>{item.title}</h1>
-                    <span>{item.location}</span>
-                </div>
-                <div className="lodging-owner">
-                    <span>{item.host.name}</span>
-                    <img src={item.host.picture} alt="owner" />
-                </div>
-            </div >
-            
-            <div className="container-element-2">
-                <div className="lodging-area">
-                    <span>{item.tags}</span>
-                </div>
-                <div className="lodging-stars">
-                    <span></span>
+            <div className="container">
+                <div className="header">
+                    <div className="title">
+                        <h1>{item.title}</h1>
+                        <h2>{item.location}</h2>
+                        <Tags tags={item.tags} />
+                    </div>
+                    <div className="sub-header">
+                        <div className="host">
+                            <span>{item.host.name}</span>
+                            <img src={item.host.picture} alt={item.host.name} />
+                        </div>
+                        <Stars rating={item.rating} />
+                    </div>
                 </div>
             </div>
-
-           <div className="container-element-3">
-                <div className="lodging-about-1">
-                    
-                </div>
-                <div className="lodging-about-2">
-                    
-                </div>
+            <div className="dropdowns">
+                <Collapse
+                    item={{ title: 'Description', text: item.description }}
+                />
+                <Collapse
+                    item={{ title: 'Equipements', text: item.equipments }}
+                />
             </div>
-        </div>
-    </div>
-
+        </section>
     )
 
 
