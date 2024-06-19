@@ -1,36 +1,66 @@
-.format{
-    height: 100vh;
+section#error {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    width: 100%;
-    max-width: 872px;
-    margin: 10px auto;
-
     color: $primary;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    min-height: 100vh;
 
-        .not-found-404 {
-            font-size: 288px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
             font-weight: 700;
-            line-height: 410.69px;
-            text-align: center;
+            font-size: 288px;
+            line-height: 142.6%;
+            font-style: normal;
+            margin: 0;
+        }
 
-        }
-        
-        .not-found-message {
+        h2 {
+            font-style: normal;
+            font-weight: 500;
             font-size: 36px;
-            font-weight: 500;
-            line-height: 51.34px;
+            line-height: 142.6%;
+            margin: 0;
+            padding: 20px;
             text-align: center;
         }
-        
-        .not-found-link {
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 25.67px;
-            text-align: center;
-            color: $black;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        text-decoration-line: underline;
+        color: black;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    section#error {
+        top: 115px;
+
+        div {
+            h1 {
+                font-size: 96px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
         }
+
+        a {
+            font-size: 14px;
+        }
+    }
 }

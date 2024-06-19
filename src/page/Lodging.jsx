@@ -35,14 +35,14 @@ const Lodging = () => {
                         <Stars rating={item.rating} />
                     </div>
                 </div>
-            </div>
-            <div className="dropdowns">
-                <Collapse
-                    item={{ title: 'Description', text: item.description }}
-                />
-                <Collapse
-                    item={{ title: 'Equipements', text: item.equipments }}
-                />
+                <div className="dropdowns">
+                    <Collapse
+                        item={{ title: 'Description', text: item.description }}
+                    />
+                    <Collapse
+                        item={{ title: 'Equipements', text: item.equipments }}
+                    />
+                </div>
             </div>
         </section>
     )

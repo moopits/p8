@@ -10,6 +10,7 @@
 @import './Lodging.scss';
 @import './Carrousel.scss';
 @import './Tags.scss';
+@import './Stars.scss';
 
 body {
     max-width: 1440px;
@@ -34,6 +35,7 @@ body {
             min-height: 100vh;
             margin-left: auto;
             margin-right: auto;
+            padding: 20px;
         }
     }
 }
@@ -41,6 +43,7 @@ body {
 @media screen and (max-width: 748px) {
     body {
         div#root {
+            margin-top: 0;
             margin-bottom: 209px;
         }
     }

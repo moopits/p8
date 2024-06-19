@@ -8,3 +8,11 @@
         margin-left: auto;
     }
 }
+
+@media screen and (max-width: 748px) {
+    .about {
+        .dropdown-container {
+            width: 100%;
+        }
+    }
+}

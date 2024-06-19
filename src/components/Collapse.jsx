@@ -7,11 +7,19 @@ const Collapse = ({ item }) => {
     const [isOpen, setIsOpen] = useState(false)
 
 
-    const description = data => (
-        <p>
-            {data}
-        </p>
-    )
+    const description = (data) =>
+        Array.isArray(data) ? (
+            <p>
+                {data.map((element) => (
+                    <span key={element}>
+                        {element}
+                        <br></br>
+                    </span>
+                ))}
+            </p>
+        ) : (
+            <p>{data}</p>
+        )
 
     return (
         <div className="dropdown-container">
